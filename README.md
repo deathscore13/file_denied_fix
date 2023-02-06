@@ -6,4 +6,5 @@
 <br><br>
 ## Требования:
 1. SourceMod 1.9+;
-2. Сервер на Linux или Windows;
+2. DHooks;
+3. Сервер на Linux или Windows;
