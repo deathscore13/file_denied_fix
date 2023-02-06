@@ -1,2 +1,9 @@
-# file_denied_fix
-Исправление флуда в консоли сервера с помощью CGameClient::FileDenied
+# FileDenied Fix
+### Исправление флуда в консоли сервера с помощью CGameClient::FileDenied<br><br>
+
+Поддерживаемые игры: CS:S OLD и CS:S OB.
+
+<br><br>
+## Требования:
+1. SourceMod 1.9+;
+2. Сервер на Linux или Windows;

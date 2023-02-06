@@ -1,0 +1,19 @@
+/**
+ * https://wiki.alliedmods.net/Signature_scanning
+ */
+
+"Games"
+{
+	"#default"
+    {
+        "Signatures"
+        {
+            "FileDenied"
+            {
+                "library"   "engine"
+                "linux"     "@_ZN11CGameClient10FileDeniedEPKcj"
+                "windows"   "\x8B\x01\xFF\x50\x40\x8B\x4C\x24\x04"
+            }
+        }
+    }
+}
