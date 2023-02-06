@@ -4,16 +4,16 @@
 
 "Games"
 {
-    "#default"
-    {
-        "Signatures"
-        {
-            "FileDenied"
-            {
-                "library"   "engine"
-                "linux"     "@_ZN11CGameClient10FileDeniedEPKcj"
-                "windows"   "\x55\x8B\xEC\x8B\x01\xFF\x50\x44\x50\xFF\x75\x08\x68\x68"
-            }
-        }
-    }
+	"#default"
+	{
+		"Signatures"
+		{
+			"FileDenied"
+			{
+				"library"	"engine"
+				"linux"		"@_ZN11CGameClient10FileDeniedEPKcj"
+				"windows"	"\x55\x8B\xEC\x8B\x01\xFF\x50\x44\x50\xFF\x75\x08\x68\x68\x39\x31\x10"
+			}
+		}
+	}
 }
