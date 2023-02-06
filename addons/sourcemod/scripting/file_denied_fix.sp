@@ -25,7 +25,7 @@ public void OnPluginStart()
         SetFailState("LoadGameConfigFile failed");
 
     Handle dhook = DHookCreateDetour(Address_Null, CallConv_CDECL, ReturnType_Void, ThisPointer_Ignore);
-    if (!DHookSetFromConf(dhook, gd, SDKConf_Signature, "FileDenied"))
+    if (!DHookSetFromConf(dhook, gd, SDKConf_Signature, "CGameClient::FileDenied"))
         SetFailState("DHookSetFromConf failed");
 
     if (!DHookEnableDetour(dhook, false, Detour_OnFileDenied))

@@ -8,7 +8,7 @@
 	{
 		"Signatures"
 		{
-			"FileDenied"
+			"CGameClient::FileDenied"
 			{
 				"library"	"engine"
 				"linux"		"@_ZN11CGameClient10FileDeniedEPKcj"
