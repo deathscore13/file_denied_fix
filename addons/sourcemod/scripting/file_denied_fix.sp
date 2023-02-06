@@ -22,14 +22,16 @@ public void OnPluginStart()
         SetFailState("Support games: CS:S OLD or CS:S OB");
 
     if (!gd)
-        SetFailState("LoadGameConfigFile error");
+        SetFailState("LoadGameConfigFile failed");
 
     Handle dhook = DHookCreateDetour(Address_Null, CallConv_CDECL, ReturnType_Void, ThisPointer_Ignore);
     if (!DHookSetFromConf(dhook, gd, SDKConf_Signature, "FileDenied"))
-        SetFailState("DHookSetFromConf error");
+        SetFailState("DHookSetFromConf failed");
+
+    if (!DHookEnableDetour(dhook, false, Detour_OnFileDenied))
+        SetFailState("DHookEnableDetour failed");
 
     gd.Close();
-    DHookEnableDetour(dhook, false, Detour_OnFileDenied);
 }
 
 public MRESReturn Detour_OnFileDenied()
