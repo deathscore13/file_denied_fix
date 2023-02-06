@@ -4,7 +4,7 @@
 
 "Games"
 {
-	"#default"
+    "#default"
     {
         "Signatures"
         {
